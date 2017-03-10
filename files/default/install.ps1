@@ -63,7 +63,7 @@ function install-devtools($destination, $version)
 {
     write-host 'Configuring editor, terminal, PowerShell, etc....'
 
-    $winbox = install-gitrepo https://github.com/adamedx/winbox $destination $version
+    $winbox = install-gitrepo https://github.com/joshoohaah/winbox $destination $version
 
     iex "& cd $winbox"
     rm .\berksfile.lock -erroraction ignore
@@ -88,5 +88,3 @@ function install-workstation($destination = $null, $winboxversion = 'master')
     write-host "`tchef shell-init powershell | iex`n" -foregroundcolor cyan
     write-host "to get started with Chef.`n"
 }
-
-

@@ -61,7 +61,7 @@ following from a PowerShell session:
 
 ```powershell
 # Clone this repository and cd to it
-git clone https://github.com/adamedx/winbox
+git clone https://github.com/joshoohaah/winbox
 cd winbox
 
 # Use Berkshelf to download all cookbook dependencies:
