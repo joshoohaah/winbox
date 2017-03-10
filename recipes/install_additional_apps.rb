@@ -7,7 +7,7 @@ node['winbox']['additional_apps'].each do |pack|
 # end
 powershell_script 'install apps' do
   code <<-EOH
-  chocolatey install #{pack} -y
+  chocolatey install #{pack} -y --allow-empty-checksums --ignore-checksums
   EOH
   returns [0, 3010]
 end
