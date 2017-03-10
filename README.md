@@ -6,7 +6,7 @@ The *Winbox* cookbook configures Windows workstations for developers. It configu
 
 Copy the following command and paste it into an **administrative** PowerShell session and run it to install *Winbox* and all its prerequisites:
 ```powershell
-powershell.exe -noprofile -executionpolicy unrestricted { . { iwr -UseBasicParsing https://raw.githubusercontent.com/adamedx/winbox/0.1.79/files/default/install.ps1 } | iex;install-workstation }
+powershell.exe -noprofile -executionpolicy unrestricted { . { iwr -UseBasicParsing https://raw.githubusercontent.com/joshoohaah/winbox/master/files/default/install.ps1 } | iex;install-workstation }
 ```
 See additonal instructions for customization and advanced usage and non-default features.
 
@@ -347,4 +347,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
