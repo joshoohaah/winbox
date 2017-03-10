@@ -22,6 +22,7 @@ if node['platform'] == "windows"
   include_recipe 'winbox::readline'
   include_recipe 'winbox::editor'
   include_recipe 'winbox::console'
+  include_recipe 'winbox::install_additional_apps'
 end
 
 # Fix terminal variable to avoid warnings
