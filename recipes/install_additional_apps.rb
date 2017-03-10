@@ -6,7 +6,6 @@ node['winbox']['additional_apps'].each do |pack|
 #   end
 # end
 powershell_script 'install apps' do
-  cwd '%TEMP%'
   code <<-EOH
   chocolatey install #{pack} -y
   EOH
