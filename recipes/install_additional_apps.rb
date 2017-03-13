@@ -5,7 +5,7 @@ node['winbox']['additional_apps'].each do |pack|
 #     action :install
 #   end
 # end
-powershell_script 'install apps' do
+powershell_script "Installing app #{pack}" do
   code <<-EOH
   chocolatey install #{pack} -y --allow-empty-checksums --ignore-checksums
   EOH
